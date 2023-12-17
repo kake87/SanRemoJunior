@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+}
+
+.container-fluid.header {
+    /* Стили по умолчанию (для экранов шириной 768 пикселей и более) */
+    height: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative; 
+    text-align: center;
+    justify-items: center;
+
+    
+
+    /* Медиа-запрос для экранов меньше 768 пикселей */
+    @media screen and (max-width: 768px) {
+        height: 75px;
+    }
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: medium;
+    line-height: 5px;
+    letter-spacing: 1.5px;
+    color: black;
+
+}
+
+.container-fluid.waves {
+    z-index: 2; /* Установите z-index выше, чем у .container-fluid.title */
+    position: relative;
+    height: 200px;
+}
+
+.container-fluid.title {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    padding-top: 100px; /* Чтобы избежать просачивания затемненного фона через текст */
+}
+
+.container-fluid.title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/static/images/home_main_container_bg.jpg');
+    filter: brightness(40%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transition: filter 0.3s;
+}
+
+
+
+.container-fluid.title h1 {
+    /* Стили для текста, который должен оставаться ярким */
+    color: #fff; /* Пример цвета текста */
+}
+
+
+.container-fluid.title h1 {
+    filter: brightness(100%);
+    font-size: 3em;
+    text-align: center;
+    font-weight: 900;
+    text-align: center;
+    color:#fff;
+    @media screen and (max-width: 768px) {
+        font-size: 2em;
+    }
+}
+
+.container-fluid.title .row {
+    display: block;
+    text-align: center;
+
+}
+
+.container-fluid.title .row p {
+    color: white;
+
+}
+
+svg.div {
+    display: block;
+    position: relative;
+    top: -2px;
+    height: 200px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#2DAADC" d="M 0 0 C 485.5 0 485.5 110 971 110 L 971 110 L 971 0 L 0 0 Z" stroke-width="0"></path> <path fill="#2DAADC" d="M 970 110 C 1445 110 1445 0 1920 0 L 1920 0 L 1920 0 L 970 0 Z" stroke-width="0"></path> </svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+}
+
+.navbar-nav {
+    height: 80px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    
+}
+
+.navbar-nav a {text-align: center;
+    vertical-align: middle;
+    padding-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+}
+    
+.navbar-nav .nav-item:hover {
+    background-color: #E1007B;
+    color: #fff;
+ /* Цвет фона при наведении */
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #fff; /* Цвет текста при наведении */}
+.elementor-shape.elementor-shape-bottom.a{
+    position: relative;
+    margin-top: -180px;
+}
+
+path {
+    fill:#2DAADC;
+    height: 200px;
+}
+
+.elementor-shape.elementor-shape-bottom {
+    transform: rotate(180deg);
+}
+
+i.fa {
+    display: inline-block;
+    border-radius: 90px;
+    border: 5px solid;
+    box-shadow: 0 0 2px #888;
+    padding: 0.5em 0.6em;
+    background-color:#fff;
+    fill:#2DAADC;
+    color:#2DAADC;
+    font-size:4em;
+    text-align:center;
+  }
+  
+i.fa:hover {
+    color:#fff;
+    background-color:#2DAADC;
+  }
+
+iframe {
+    border-radius: 40px;
+}
+
+.links {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding-top:20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 350px;
+    flex-direction: row;
+    z-index: 10;
+    flex-wrap: nowrap;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        padding-top: 100px;
+    }
+
+}
+
+.cards {
+    padding-top: 200px;
+    border-radius: 15px;
+    height: 300px;
+    @media screen and (max-width: 768px) {
+        padding-top: 50px;
+    }
+    
+}
+
+.cards .row.basic {
+    gap: 2em;
+}
+
+.cards .col {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+.cards h1 {
+    color: #E1007B;
+    font-weight: 900;
+}
+
+.cards p {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container.dream {
+    text-align: center;
+    height: max-content;
+    text-transform: uppercase;
+    padding-top: 200px;
+
+}
+
+button {
+    height:40px;
+    width:200px;
+    border: 1px solid #E1007B;
+    background-color:white;
+    color:#E1007B;
+    border-radius:5px;
+  }
+  
+  button:hover {
+    background-color:#E1007B;
+    color:white;
+  }
+
+
+.col.desk div {
+    text-align: center;
+}
+
+.col.who div {
+    margin-top: 200px;
+}
+
+ul{
+    list-style: none;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.0em;
+    padding: 0;
+    display: inline-block;
+}
+ul > li{
+    padding-left: 20px;
+    position: relative;
+    margin: 10px;
+}
+ul > li:before{
+    content: '✔';
+    position: relative; top: 0; left: 2;
+    color: #0099ff;
+}
+
+.container.pregal {
+    text-align: center;
+
+}
+
+.container.pregal h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2.title {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #2DAADC;
+}
+
+h2.text {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 900;
+    color: red;
+}
+
+.container.images {
+        text-align: center;
+        margin-bottom: 20px; /* Вертикальный отступ между рядами */
+}
+
+.container.images img {
+    margin: 0 20px 20px 0; /* Промежуток между изображениями по вертикали */
+}
+
+
+.container-fluid.footer {
+    background: url("/static/images/svg.png");
+    height: 600px;
+}
+
+.hl {
+    border-left: 2px solid #000;
+    height: 50px; /* Высота линии, по вашему желанию */
+    margin: 0 10px; /* Расстояние между линией и текстом, по вашему желанию */
+  }
+
+.description {
+    margin-top: 200px;
+}
+
+.vr {
+    border-left: 0.5px solid #000000; /* Замените цвет и толщину по вашему выбору */
+    height: 4em; /* Регулируйте высоту линии по вашему желанию */
+    margin: 0 10px; /* Регулируйте отступы по вашему желанию */
+    background-color: #fff;
+}
+
+.card h5 {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 900;
+    color: #E1007B;
+    text-align: center;
+}
+
+.card h6 {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    color: #6c757d;
+    text-align: center;
+}
+
+.card p {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    color: #6c757d;
+    text-align: center;
+}
+
+.text-muted {
+    color: #000;
+}
+
+.description .row {
+    @media screen and (max-width: 768px) {
+        padding-top: 0px;
+    }
+}
+
+.forma {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.row .contacts, .contin {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.row.contacts h3 {
+    color: #E1007B;
+}
+
+.contacts i {
+    color: #E1007B;
+}

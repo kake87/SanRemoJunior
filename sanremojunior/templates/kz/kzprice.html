@@ -1,0 +1,108 @@
+{% extends "kz/kzbase.html" %} 
+{% block content %}
+
+<style>
+    .container {
+        margin-top: 50px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first, .important {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    p, li {
+        font-size: 1.5rem;
+        font-family: 'Montserrat', 'sans-serif';
+    }
+
+    li {
+        color:#0099ff
+    }
+
+    h2, h3 {
+        text-transform: uppercase;
+        color: #E1007B;
+    }
+
+    i {
+        color: #E1007B;
+    }
+
+    .contacts a {
+        font-size: 1.2em;
+        text-decoration: none;
+        color:#E1007B
+    }
+
+    .flags {
+        display:flex;
+        flex-direction: row;
+    }
+</style>
+
+
+<div class="row title text-center"><h2>ТҰРУ БАҒАСЫ</h2></div>
+<div class="row text-center first">
+    <h3 style="text-transform:uppercase">SANREMO TEATRO DELL'OPERA DEL CASINÒ-де жартылай финал және финал</span> </h3>
+    <h4>2024 жылғы Ақпан-Наурыз</h4>
+    <p>Бағалар тек Сан-Ремо қаласының байқауына аккредиттелген қатысушылар мен ілесіп жүрушілер үшін жарамды</p>
+    <p>Жарты пансиондағы тұру бағасы (түні, таңғы ас және кешкі ас) бір ТҮНДЕ бір адамға есептелген</p>
+    <ul class="text-center">
+        <li>Сан-Ремодан 7 км қашықтықта орналасқан 3 жұлдызды қонақ үй. Сан-ремо орталығынан: 3 түнге бір адамға 240 еуро (бір түн 80 евро)</li>
+        <li>Сан-Ремодағы 3 жұлдызды қонақ үй: 3 түнге бір адамға 270 еуро (бір түн 90 еуро)</li>
+        <li>Әрбір плюс бір орын бөлме бос болуына байланысты түніне 25,00 евро қосымша ақы алады.</li>
+        <li>4 және 5 жұлдызды қонақүйлердегі нөмірлер алдын ала тапсырыс бойынша беріледі</li>
+
+    </ul>
+    <p>Қосымша түскі ас (қонақ үйден тыс): 25,00 евро</p>
+    <p>Қосымша тамаққа тапсырыс беру брондау кезінде төлеу керек.</p>
+
+</div>
+
+<div class="row text-center important">
+    <h3>НАЗАР АУДАРЫҢЫЗ!</h3>
+    <p>Ұйымдастырушылық және бақылау мақсатында қатысушылар мен онымен бірге жүретін адамдар, сондай-ақ жарыстың Ұлттық жартылай финалы мен финалы кезінде Сан-Ремода байқауға қатысу мүмкіндігі болса аккредиттеуді беретін Агенттікте жоғарыда аталған пакеттердің бірін брондау керек.</p>
+
+    <p>SanremoJunior аккредитациясы тек брондалған түндер үшін жарамды.</p>
+    <p>Бағаның ішінде:</p>
+    <ul class="text-center">
+        <li>3 жұлдызды қонақүйлер үшін жарты пансион (түнде, таңғы және кешкі ас, сусындарсыз және қосымша қызметтерсіз); қонақүйде екі кісілік нөмірлерде және сұраныс бойынша мен бос орын болған жағдайда басқа бөлмелерде түнеу</li>
+        <li>Байқаудың әртүрлі кезеңдерінде көрсетілген барлық қызметтер./li>
+        <li>«SanremoJunior» жүйесіне кіру</li>
+        <li>Белгіше</li>
+        <li>Қақпақ</li>
+        <li>«SanremoJunior» итальяндық финалдық кезеңінің барлық іс-шараларына тегін кіру.</li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="row text-center contacts">
+        <div class="container">
+            <div class="row contin">
+                <div class="col-md-6">
+                    <div class="contact-container">
+                        <h3>Контактілер</h3>
+                        <p><i class="fas fa-globe"></i> <a href="http://www.sanremojunior.kz" target="_blank">www.sanremojunior.kz</a></p>
+                        <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/sanremojunior_kz/" target="_blank">@sanremojunior_kz</a></p>
+                        <p><i class="fas fa-phone"></i> Телефоны: +7 701 907 01 89,<br> +7 702 536 48 88</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Мекен-жайы: Астана, Ақкербез к-сі, 10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+{% endblock content %}

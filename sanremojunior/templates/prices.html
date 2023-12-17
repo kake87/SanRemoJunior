@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+    .container {
+        margin-top: 50px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first, .important {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    p, li {
+        font-size: 1.5rem;
+        font-family: 'Montserrat', 'sans-serif';
+    }
+
+    li {
+        color:#0099ff
+    }
+
+    h2, h3 {
+        text-transform: uppercase;
+        color: #E1007B;
+    }
+
+    i {
+        color: #E1007B;
+    }
+
+    .contacts a {
+        font-size: 1.2em;
+        text-decoration: none;
+        color:#E1007B
+    }
+
+    .flags {
+        display:flex;
+        flex-direction: row;
+    }
+</style>
+
+
+<div class="row title text-center"><h2>Стоимость проживания</h2></div>
+<div class="row text-center first">
+    <h3>Полуфинал и финал в <span>SANREMO TEATRO DELL’OPERA DEL CASINÒ</span> </h3>
+    <h4>Февраль-Март 2024</h4>
+    <p>Цены действительно только для для участников и сопровождающих имеющих аккредитацию на конкурс Сан-Ремо</p>
+    <p>Стоимость за проживание в полупансионе (ночевка, завтрак и ужин) рассчитывается исходя из одного человека за одну НОЧЬ </p>
+    <ul class="text-center">
+        <li>3-звездочный отель за пределами Сан-Ремо – расположенный на расстоянии более 7 км. из центра Сан-Ремо: 240 евро на человека за 3 ночи (80 евро на человека за ночь)</li>
+        <li>3-звездочный отель в Сан-Ремо: 270 евро на человека за 3 ночи (90 евро за человека)</li>
+        <li>За каждый одноместный номер взимается дополнительная плата в размере 25,00 евро за одну ночь при наличии мест.</li>
+        <li>Номера в 4 и 5-звездочных отелях предоставляются по предварительному запросу</li>
+
+    </ul>
+    <p>Дополнительные обеды (вне отеля): 25,00 евро</p>
+    <p>Дополнительные обеды необходимо заказывать и оплачивать во время бронирования.</p>
+
+</div>
+
+<div class="row text-center important">
+    <h3>ВАЖНО!</h3>
+    <p>По организационным и контрольным причинам участники и сопровождающие, а также те, кто хочет находиться в Сан-Ремо во время проведения Национального полуфинала и финала конкурса, должны забронировать в Агентстве один из вышеперечисленных пакетов, что дает аккредитацию и возможность участия в конкурсе. </p>
+
+    <p>Аккредитация на «sanremoJunior» действительна только в течении забронированных ночей.</p>
+    <p>В стоимость входит:</p>
+    <ul class="text-center">
+        <li>Полупансион (ночевка, завтрак и ужин, без напитков и дополнительных услуг) для отелей 3 звезды; ночевка в отеле в двухместных и в других номерах по запросу и при наличии возможности</li>
+        <li>Все услуги, перечисленные на различных этапах Конкурса.</li>
+        <li>Вход на “sanremoJunior”</li>
+        <li>Значок</li>
+        <li>Бейсболка</li>
+        <li>Бесплатный вход на все мероприятия итальянского финального этапа "sanremoJunior".</li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="row text-center contacts">
+        <div class="container">
+            <div class="row contin">
+                <div class="col-md-6">
+                    <div class="contact-container">
+                        <h3>Контакты</h3>
+                        <p><i class="fas fa-globe"></i> <a href="http://www.sanremojunior.kz" target="_blank">www.sanremojunior.kz</a></p>
+                        <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/sanremojunior_kz/" target="_blank">@sanremojunior_kz</a></p>
+                        <p><i class="fas fa-phone"></i> Телефоны: +7 701 907 01 89,<br> +7 702 536 48 88</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Адрес: Астана, ул. Аккербез 10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+{% endblock content %}
